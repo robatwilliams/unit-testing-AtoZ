@@ -89,7 +89,19 @@ There are many approaches, but top-level separation into `src` and `test` folder
 
 ## L
 
-🏜️
+### Loose
+
+A test that isn't too fussy about what it expects, and may continue passing even when a change has broken the code under test.
+
+Caused by inadequate or imprecise assertions, which can be fixed by increasing their scope and/or using a stricter matcher:
+
+```javascript
+expect(foo).toBeTruthy();
+expect(foo).toBe(true);
+
+expect(() => returnBook()).toThrow();
+expect(() => returnBook()).toThrow('Unknown book');
+```
 
 ## M
 
