@@ -6,7 +6,25 @@ Much of it is fairly general, but reflects my focus on web frontend applications
 
 ## A
 
-🏜️
+### Arrange, act, assert
+
+The three phases of a test: prepare the participants, act on some of them, then assert your expectations.
+
+Readability is improved when these have some clear separation, but for simpler tests it can make sense to combine some or all of them:
+
+```javascript
+test('add', () => {
+  const calculator = new Calculator();
+
+  const result = calculator.add(1, 2);
+
+  expect(result).toBe(3);
+});
+
+test('isPrime', () => {
+  expect(isPrime(3)).toBe(true);
+});
+```
 
 ## B
 
