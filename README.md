@@ -10,7 +10,19 @@ Much of it is fairly general, but reflects my focus on web frontend applications
 
 ## B
 
-🏜️
+### Brittle
+
+A test that is easily broken when it doesn't need to - by a change that doesn't break the code under test.
+
+Often caused by asserting on more than what the test really cares about, which can be fixed by reducing their scope and/or using a less-strict matcher:
+
+```javascript
+expect(invoice).toEqual({ id: 123, items: 10, amountPayable: 123, ... });
+expect(invoice).toMatchObject({ items: 10, amountPayable: 123 });
+
+expect(classes).toBe('btn btn-primary btn-disabled');
+expect(classes).toContain('btn-disabled');
+```
 
 ## C
 
