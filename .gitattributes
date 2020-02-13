@@ -1,0 +1,2 @@
+# Disable all line ending conversion, overriding user core.aurocrlf setting, to avoid confusion
+* -text
