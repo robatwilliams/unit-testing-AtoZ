@@ -2,6 +2,8 @@
 
 > A collection of short and straightforward tips for better unit tests
 
+Much of it is fairly general, but reflects my focus on web frontend applications.
+
 ## D
 
 ### `describe()` block
