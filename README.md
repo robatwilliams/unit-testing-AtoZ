@@ -71,6 +71,17 @@ May be nested, but it's better not to go too deep. Optional; use only when they 
 
 ## F
 
+### Failure message
+
+The message printed by the test runner when the test fails.
+
+There are many ways of asserting the same expectations, but using the most suitable matcher tends to produce a more informative message:
+
+```javascript
+expect(array.length).toBe(3); // expected 3, received 1
+expect(array).toHaveLength(3); // expected length 3, received length 1, array: ['apple']
+```
+
 ### File
 
 Contains tests. A pattern that works well is to put it alongside the tested file, and give it the same name with a well-known suffix to mark it as a test.
