@@ -33,10 +33,10 @@ test('isPrime', () => {
 
 A test that is easily broken when it doesn't need to - by a change that doesn't break the code under test.
 
-Often caused by asserting on more than what the test really cares about, which can be fixed by reducing their scope and/or using a less-strict matcher:
+Often caused by asserting on more than what the test really cares about, such as too-wide a scope, or incidental behaviour. Fixable by refining/reducing the scope of assertions, and/or using a less-strict matcher:
 
 ```javascript
-expect(invoice).toEqual({ id: 123, items: 10, amountPayable: 123, ... });
+expect(invoice).toEqual({ id: 123, items: 10, amountPayable: 123, etc... });
 expect(invoice).toMatchObject({ items: 10, amountPayable: 123 });
 
 expect(classes).toBe('btn btn-primary btn-disabled');
