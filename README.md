@@ -64,8 +64,6 @@ Although tools can enforce a specified level of coverage, it is quite a nuanced 
 
 ## D
 
-🏜️
-
 ### `describe()` block
 
 Allows grouping together of related tests.
