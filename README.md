@@ -8,11 +8,12 @@ Much of it is fairly general, but reflects my focus on web frontend applications
 
 ### Arrange, act, assert
 
-The three phases of a test: prepare the participants, act on some of them, then assert your expectations.
+The three phases of a test: create/prepare the participants, act on some of them, then assert your expectations.
 
-Readability is improved when these have some clear separation, but for simpler tests it can make sense to combine some or all of them:
+Readability is improved by having clear separation between them, but some or all of them can be combined in simpler tests:
 
 ```javascript
+// Imagine that this test is more complex
 test('add', () => {
   const calculator = new Calculator();
 
