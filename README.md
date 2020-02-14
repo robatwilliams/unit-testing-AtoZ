@@ -44,7 +44,7 @@ expect(classes).toContain('btn-disabled');
 
 ## C
 
-## Code review
+### Code review
 
 Tests are code, too. They need reviewing just like the code under test.
 
@@ -52,7 +52,7 @@ The usual benefits of code review apply, including increased quality, knowledge 
 
 Poor tests have many problems, and can later make it difficult to change or refactor the code under test.
 
-## Coverage
+### Coverage
 
 A measure of "how much" and "what" is being tested.
 
@@ -112,7 +112,7 @@ Reminds and encourages us to update the tests when we change the code. Makes it 
 
 There are many approaches, but top-level separation into `src` and `test` folders with mirrored subfolders should be avoided. Use a consistent approach, possibly tightening the test runner's default configuration to enforce that.
 
-## Focus
+### Focus
 
 Marking a test (or a group of tests) as the only ones to be run.
 
