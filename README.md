@@ -161,6 +161,18 @@ expect(() => returnBook()).toThrow('Unknown book');
 
 🚧
 
+## P
+
+### Partial mock data
+
+Mock data that is minimally tailored for the test, missing parts of the real data:
+
+```javascript
+expect(isValidTrade({ quantity: -1 }).toBe(false);
+```
+
+Not a realistic test of the code. The code under test may produce the expected result for the wrong reason. Typed languages can help avoid this (when used well), especially when it comes to maintaining existing tests as the data model grows.
+
 ## R
 
 ### Redundant assertion
