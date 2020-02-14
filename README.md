@@ -44,6 +44,14 @@ expect(classes).toContain('btn-disabled');
 
 ## C
 
+## Code review
+
+Tests are code, too. They need reviewing just like the code under test.
+
+The usual benefits of code review apply, including increased quality, knowledge sharing, and learning about good testing practices. It also results in a better review of the code under test, through strengthening the understanding of it.
+
+Poor tests have many problems, and can later make it difficult to change or refactor the code under test.
+
 ## Coverage
 
 A measure of "how much" and "what" is being tested.
