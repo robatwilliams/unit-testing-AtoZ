@@ -61,23 +61,6 @@ Use case coverage refers to which of the possible scenarios that the code could 
 
 Although tools can enforce a specified level of coverage, it's quite a nuanced topic that requires judgement. Enforcement by tool may not be the most effective way of improving meaningful test coverage, and it may encourage/force the addition of useless tests.
 
-## D
-
-### `describe()` block
-
-Allows grouping together of related tests:
-
-```javascript
-describe('add', () => {
-  test('two positive numbers', () => {});
-  test('zero and zero', () => {});
-});
-```
-
-Helps keep the test file organised. Allows code folding in IDEs to be used to gain an overview of the tests. Produces neat and easily readable test run output. Avoids the need for repetitive test names. Allows running of only the related tests using a focus marker.
-
-May be nested, but it's better not to go too deep. Optional; use only when they help. Not necessary to wrap the entire test file in one when using a modern test runner.
-
 ## F
 
 ### Failure message
@@ -112,6 +95,23 @@ Marking a test (or a group of tests) as the only ones to be run.
 Useful for reducing execution time and test runner output clutter when working on a specific area of functionality. Also for debugging a single test.
 
 A lint rule can be used to avoid forgetting to remove a focus marker.
+
+## D
+
+### Grouping block
+
+Allows grouping together of related tests:
+
+```javascript
+describe('add', () => {
+  test('two positive numbers', () => {});
+  test('zero and zero', () => {});
+});
+```
+
+Helps keep the test file organised. Allows code folding in IDEs to be used to gain an overview of the tests. Produces neat and easily readable test run output. Avoids the need for repetitive test names. Allows running of only the related tests using a focus marker.
+
+May be nested, but it's better not to go too deep. Optional; use only when they help. Not necessary to wrap the entire test file in one when using a modern test runner.
 
 ## L
 
