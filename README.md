@@ -90,7 +90,11 @@ There are many approaches, but top-level separation into `src` and `test` folder
 
 ### Focus
 
-Marking a test (or a group of tests) as the only ones to be run.
+Marking a test (or a group of tests) as the only ones to be run:
+
+```javascript
+it.only('disables the button when the form is invalid', () => {});
+```
 
 Useful for reducing execution time and test runner output clutter when working on a specific area of functionality. Also for debugging a single test.
 
@@ -133,6 +137,10 @@ expect(() => returnBook()).toThrow('Unknown book');
 
 ### Skip
 
-Marking a test (or a group of tests) to not be run.
+Marking a test (or a group of tests) to not be run:
+
+```javascript
+it.skip('disables the button when the form is invalid', () => {});
+```
 
 A lint rule can be used to avoid forgetting to remove a skip marker. When a test needs to be checked in despite being skipped, a lint-ignore comment can be used - best preceded with an explanatory comment.
