@@ -47,11 +47,9 @@ expect(classes).toContain('btn-disabled');
 
 ### Code review
 
-Tests are code, too. They need reviewing just like the code under test.
+Peer review of code to improve quality and identify problems.
 
-The usual benefits of code review apply, including increased quality, knowledge sharing, and learning about good testing practices. It also results in a better review of the code under test, through strengthening the understanding of it.
-
-Poor tests have many problems, and can later make it difficult to change or refactor the code under test.
+Tests are code too, so they need reviewing. Usual benefits apply, including learning about good testing practices. Poor tests have many problems, and can later make it difficult to change or refactor the code under test.
 
 ### Coverage
 
