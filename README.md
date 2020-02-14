@@ -90,7 +90,12 @@ There are many ways of asserting the same expectations, but using the most suita
 ```javascript
 expect(array.length).toBe(3); // expected 3, received 1
 expect(array).toHaveLength(3); // expected length 3, received length 1, array: ['apple']
+
+expect(haystack.includes(needle)).toBe(true);
+expect(haystack).toContain(needle);
 ```
+
+🧐 ESLint: [jest/prefer-to-contain](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-contain.md), [jest/prefer-to-have-length](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-have-length.md)
 
 ### File
 
@@ -141,6 +146,33 @@ May be nested, but it's better not to go too deep. Optional; use only when they 
 
 ## L
 
+### Linting
+
+Static analysis to detect problems, enforce best practices, and maintain consistency.
+
+Some test-specific adaptations to linter configuration is normally necessary; this can be targeted at only the test files:
+
+```json
+// .eslintrc.json
+{
+  "overrides": [
+    {
+      "files": ["*.spec.js"],
+      "env": {
+        "jest": true // Predefined globals for no-undef
+      },
+      "rules": {
+        // For describe() blocks
+        "max-lines-per-function": "off",
+        "max-statements": "off"
+      }
+    }
+  ]
+}
+```
+
+Many test frameworks/libraries have companion plugins for ESLint, for example [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest).
+
 ### Long file
 
 A file of tests that is so long as to be difficult to comprehend and navigate.
@@ -160,6 +192,8 @@ expect(foo).toBe(true);
 expect(() => returnBook()).toThrow();
 expect(() => returnBook()).toThrow('Unknown book');
 ```
+
+🧐 ESLint: [jest/no-truthy-falsy](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-truthy-falsy.md), [jest/require-to-throw-message](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/require-to-throw-message.md)
 
 ➡ See: [brittle](#brittle)
 
