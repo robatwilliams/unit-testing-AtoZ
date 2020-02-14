@@ -108,7 +108,7 @@ There are many approaches, but top-level separation into `src` and `test` folder
 
 ### Focus
 
-Marking a test (or a group of tests) as the only ones to be run:
+Marking a test (or a group of tests) as the only one to be run:
 
 ```javascript
 it.only('disables the button when the form is invalid', () => {});
