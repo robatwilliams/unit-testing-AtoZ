@@ -135,4 +135,4 @@ expect(() => returnBook()).toThrow('Unknown book');
 
 Marking a test (or a group of tests) to not be run.
 
-A lint rule can be used to avoid forgetting to remove a skip marker. When a test needs to be checked in despite being skipped, a lint-ignore comment can be used - preferably preceded with a comment explaining why the test is skipped.
+A lint rule can be used to avoid forgetting to remove a skip marker. When a test needs to be checked in despite being skipped, a lint-ignore comment can be used - best preceded with an explanatory comment.
