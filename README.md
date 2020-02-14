@@ -106,6 +106,8 @@ Reminds and encourages us to update the tests when we change the code. Makes it 
 
 There are many approaches, but top-level separation into `src` and `test` folders with mirrored subfolders should be avoided. Use a consistent approach, possibly tightening the test runner's default configuration to enforce that.
 
+➡ See: [long file](#long-file)
+
 ### Focus
 
 Marking a test (or a group of tests) as the only one to be run:
@@ -138,6 +140,12 @@ Helps keep the test file organised. Allows code folding in IDEs to be used to ga
 May be nested, but it's better not to go too deep. Optional; use only when they help. Not necessary to wrap the entire test file in one when using a modern test runner.
 
 ## L
+
+### Long file
+
+A file of tests that is so long as to be difficult to comprehend and navigate.
+
+With the approach of a single test file per implementation file, the test file becomes the longer of the pair. IDE features such as code folding become invaluable for navigation. When a file becomes unreasonably long, it may be a sign that the file under test is in need of splitting - rather than the test file.
 
 ### Loose
 
