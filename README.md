@@ -43,6 +43,8 @@ expect(classes).toBe('btn btn-primary btn-disabled');
 expect(classes).toContain('btn-disabled');
 ```
 
+➡ See: [loose](#loose)
+
 ## C
 
 ### Code review
@@ -60,6 +62,8 @@ Code coverage refers to which lines/paths through the code were executed while r
 Use case coverage refers to which of the possible scenarios that the code could encounter are covered by tests. Full coverage means that any change to the behaviour of the code will cause a test failure, and indicates good choice of test cases and appropriate assertions. Usually analysed manually, but can be aided by mutation testing.
 
 Although tools can enforce a specified level of coverage, it's quite a nuanced topic that requires judgement. Enforcement by tool may not be the most effective way of improving meaningful test coverage, and it may encourage/force the addition of useless tests.
+
+➡ See: [mutation testing](#mutation-testing)
 
 ## F
 
@@ -98,7 +102,7 @@ it.only('disables the button when the form is invalid', () => {});
 
 Useful for reducing execution time and test runner output clutter when working on a specific area of functionality. Also for debugging a single test.
 
-A lint rule can be used to avoid forgetting to remove a focus marker.
+A [lint rule](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-focused-tests.md) can be used to avoid forgetting to remove a focus marker.
 
 ## D
 
@@ -133,6 +137,14 @@ expect(() => returnBook()).toThrow();
 expect(() => returnBook()).toThrow('Unknown book');
 ```
 
+➡ See: [brittle](#brittle)
+
+## M
+
+### Mutation testing
+
+🚧
+
 ## S
 
 ### Skip
@@ -143,4 +155,4 @@ Marking a test (or a group of tests) to not be run:
 it.skip('disables the button when the form is invalid', () => {});
 ```
 
-A lint rule can be used to avoid forgetting to remove a skip marker. When a test needs to be checked in despite being skipped, a lint-ignore comment can be used - best preceded with an explanatory comment.
+A [lint rule](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-disabled-tests.md) can be used to avoid forgetting to remove a skip marker. When a test needs to be checked in despite being skipped, a lint-ignore comment can be used - best preceded with an explanatory comment.
