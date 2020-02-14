@@ -117,9 +117,9 @@ A lint rule can be used to avoid forgetting to remove a focus marker.
 
 ### Loose
 
-A test that isn't too fussy about what it expects, and may continue passing even when a change has broken the code under test.
+A test that isn't too fussy about what it expects - and may continue passing when a change has broken the code under test.
 
-Caused by inadequate or imprecise assertions, which can be fixed by increasing their scope and/or using a stricter matcher:
+Often caused by inadequate or imprecise assertions. Fixable by increasing their scope and/or making them stricter:
 
 ```javascript
 expect(foo).toBeTruthy();
