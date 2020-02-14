@@ -65,7 +65,7 @@ Although tools can enforce a specified level of coverage, it's quite a nuanced t
 
 ### `describe()` block
 
-Allows grouping together of related tests.
+Allows grouping together of related tests:
 
 ```javascript
 describe('add', () => {
