@@ -53,13 +53,13 @@ Tests are code too, so they need reviewing. Usual benefits apply, including lear
 
 ### Coverage
 
-A measure of "how much" and "what" is being tested.
+A measure of what is being tested.
 
-Usually refers to "code coverage", meaning which lines/paths through the code were executed while executing the tests. It's a useful indicator of untested code, but reveals nothing about good test cases and appropriate assertions.
+Code coverage refers to which lines/paths through the code were executed while running the tests. It's an useful indicator of untested code, but reveals nothing about test quality.
 
-The other, stronger, type of coverage is use case coverage. This measures which of the possible scenarios that the code could encounter are covered by tests. Full coverage means that any change to the behaviour of the code will cause at least one test to fail. Usually analysed manually, but mutation testing can also help.
+Use case coverage refers to which of the possible scenarios that the code could encounter are covered by tests. Full coverage means that any change to the behaviour of the code will cause a test failure, and indicates good choice of test cases and appropriate assertions. Usually analysed manually, but can be aided by mutation testing.
 
-Although tools can enforce a specified level of coverage, it is quite a nuanced topic that requires judgement. Enforcement by tool may not be the most effective way of improving meaningful test coverage, and it may encourage/force the addition of useless tests.
+Although tools can enforce a specified level of coverage, it's quite a nuanced topic that requires judgement. Enforcement by tool may not be the most effective way of improving meaningful test coverage, and it may encourage/force the addition of useless tests.
 
 ## D
 
