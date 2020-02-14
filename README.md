@@ -75,7 +75,9 @@ Marking a test (or a group of tests) to not be run:
 it.skip('disables the button when the form is invalid', () => {});
 ```
 
-A [lint rule](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-disabled-tests.md) can be used to avoid forgetting to remove a skip marker. When a test needs to be checked in despite being skipped, a lint-ignore comment can be used - best preceded with an explanatory comment.
+A lint rule can be used to avoid forgetting to remove a skip marker. When a test needs to be checked in despite being skipped, a lint-ignore comment can be used - best preceded with an explanatory comment.
+
+🧐 ESLint: [jest/no-disabled-tests](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-disabled-tests.md)
 
 ➡ See: [focus](#focus)
 
@@ -123,7 +125,7 @@ it.only('disables the button when the form is invalid', () => {});
 
 Useful for reducing execution time and test runner output clutter when working on a specific area of functionality. Also for debugging a single test.
 
-A [lint rule](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-focused-tests.md) can be used to avoid forgetting to remove a focus marker.
+🧐 ESLint: [jest/no-focused-tests](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-focused-tests.md)
 
 ➡ See: [disable](#disable)
 
