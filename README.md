@@ -160,3 +160,16 @@ expect(() => returnBook()).toThrow('Unknown book');
 ### Mutation testing
 
 🚧
+
+## R
+
+### Redundant assertion
+
+An assertion whose expectation is already covered by another assertion present:
+
+```javascript
+expect(book).not.toBeNull();
+expect(book.title).toBe('The Art of Unit Testing');
+```
+
+Can simply be removed to reduce noise.
