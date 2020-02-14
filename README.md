@@ -65,6 +65,20 @@ Although tools can enforce a specified level of coverage, it's quite a nuanced t
 
 ➡ See: [mutation testing](#mutation-testing)
 
+## D
+
+### Disable
+
+Marking a test (or a group of tests) to not be run:
+
+```javascript
+it.skip('disables the button when the form is invalid', () => {});
+```
+
+A [lint rule](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-disabled-tests.md) can be used to avoid forgetting to remove a skip marker. When a test needs to be checked in despite being skipped, a lint-ignore comment can be used - best preceded with an explanatory comment.
+
+➡ See: [focus](#focus)
+
 ## F
 
 ### Failure message
@@ -103,6 +117,8 @@ it.only('disables the button when the form is invalid', () => {});
 Useful for reducing execution time and test runner output clutter when working on a specific area of functionality. Also for debugging a single test.
 
 A [lint rule](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-focused-tests.md) can be used to avoid forgetting to remove a focus marker.
+
+➡ See: [disable](#disable)
 
 ## D
 
@@ -144,15 +160,3 @@ expect(() => returnBook()).toThrow('Unknown book');
 ### Mutation testing
 
 🚧
-
-## S
-
-### Skip
-
-Marking a test (or a group of tests) to not be run:
-
-```javascript
-it.skip('disables the button when the form is invalid', () => {});
-```
-
-A [lint rule](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-disabled-tests.md) can be used to avoid forgetting to remove a skip marker. When a test needs to be checked in despite being skipped, a lint-ignore comment can be used - best preceded with an explanatory comment.
