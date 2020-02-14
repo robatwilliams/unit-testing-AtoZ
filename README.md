@@ -123,7 +123,7 @@ Marking a test (or a group of tests) as the only one to be run:
 it.only('disables the button when the form is invalid', () => {});
 ```
 
-Useful for reducing execution time and test runner output clutter when working on a specific area of functionality. Also for debugging a single test.
+Useful for reducing execution time and test runner output clutter when working on a specific area of functionality. Also for debugging a single test. A lint rule can be used to avoid forgetting to remove a focus marker.
 
 🧐 ESLint: [jest/no-focused-tests](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-focused-tests.md)
 
