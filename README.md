@@ -109,7 +109,7 @@ There are many approaches, but top-level separation into `src` and `test` folder
 
 Marking a test (or a group of tests) as the only ones to be run.
 
-Useful for reducing execution time and test runner output clutter when working on a specific area of functionality. Necessary for debugging a single test.
+Useful for reducing execution time and test runner output clutter when working on a specific area of functionality. Also for debugging a single test.
 
 A lint rule can be used to avoid forgetting to remove a focus marker.
 
