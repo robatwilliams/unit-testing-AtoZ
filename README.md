@@ -77,7 +77,7 @@ describe('add', () => {
 });
 ```
 
-Helps keep the test file organised. Allows code folding in IDEs to be used to gain an overview of the tests. Produces neat and easily readable test run output. Avoids the need for repetitive test names. Allows running of only the related tests using the `describe.only()` modifier.
+Helps keep the test file organised. Allows code folding in IDEs to be used to gain an overview of the tests. Produces neat and easily readable test run output. Avoids the need for repetitive test names. Allows running of only the related tests using a focus marker.
 
 May be nested, but it's better not to go too deep. Optional; use only when they help. Not necessary to wrap the entire test file in one when using a modern test runner.
 
@@ -111,6 +111,14 @@ folder/
 Reminds and encourages us to update the tests when we change the code. Makes it easy to find the tests for a given file, or highlights their absence. Allows filtering in/out within IDE search and build tools. Promotes testing as an integral part of development, and tests as equal-class citizens of the codebase.
 
 There are many approaches, but top-level separation into `src` and `test` folders with mirrored subfolders should be avoided. Use a consistent approach, possibly tightening the test runner's default configuration to enforce that.
+
+## Focus
+
+Marking a test (or a group of tests) as the only ones to be run.
+
+Useful for reducing execution time and test runner output clutter when working on a specific area of functionality. Necessary for debugging a single test.
+
+A lint rule can be used to avoid forgetting to remove a focus marker.
 
 ## G
 
@@ -174,7 +182,11 @@ expect(() => returnBook()).toThrow('Unknown book');
 
 ## S
 
-🏜️
+### Skip
+
+Marking a test (or a group of tests) to not be run.
+
+A lint rule can be used to avoid forgetting to remove a skip marker. When a test needs to be checked in despite being skipped, a lint-ignore comment can be used - preferably preceded with a comment explaining why the test is skipped.
 
 ## T
 
