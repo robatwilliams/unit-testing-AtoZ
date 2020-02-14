@@ -146,6 +146,14 @@ Helps keep the test file organised. Allows code folding in IDEs to be used to ga
 
 May be nested, but it's better not to go too deep. Optional; use only when they help. Not necessary to wrap the entire test file in one when using a modern test runner.
 
+## I ⭐
+
+### Ineffective test
+
+A test that doesn't test what its name says it tests.
+
+Continues to pass when the code is broken. Be aware, and validate suspicions by modifying the code under test to see if that causes a failure.
+
 ## L ⭐
 
 ### Linting
