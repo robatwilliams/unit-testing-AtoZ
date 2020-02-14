@@ -154,7 +154,7 @@ Static analysis to detect problems, enforce best practices, and maintain consist
 
 Some test-specific adaptations to linter configuration is normally necessary; this can be targeted at only the test files:
 
-```json
+```jsonc
 // .eslintrc.json
 {
   "overrides": [
