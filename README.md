@@ -4,7 +4,7 @@
 
 Much of it is fairly general, but reflects my focus on web frontend applications.
 
-## A
+## A ⭐
 
 ### Arrange, act, assert
 
@@ -27,7 +27,7 @@ test('isPrime', () => {
 });
 ```
 
-## B
+## B ⭐
 
 ### Brittle
 
@@ -45,7 +45,7 @@ expect(classes).toContain('btn-disabled');
 
 ➡ See: [loose](#loose)
 
-## C
+## C ⭐
 
 ### Code review
 
@@ -65,7 +65,7 @@ Although tools can enforce a specified level of coverage, it's quite a nuanced t
 
 ➡ See: [mutation testing](#mutation-testing)
 
-## D
+## D ⭐
 
 ### Disable
 
@@ -81,7 +81,7 @@ A lint rule can be used to avoid forgetting to remove a skip marker. When a test
 
 ➡ See: [focus](#focus)
 
-## F
+## F ⭐
 
 ### Failure message
 
@@ -129,7 +129,7 @@ Useful for reducing execution time and test runner output clutter when working o
 
 ➡ See: [disable](#disable)
 
-## D
+## G ⭐
 
 ### Grouping block
 
@@ -146,7 +146,7 @@ Helps keep the test file organised. Allows code folding in IDEs to be used to ga
 
 May be nested, but it's better not to go too deep. Optional; use only when they help. Not necessary to wrap the entire test file in one when using a modern test runner.
 
-## L
+## L ⭐
 
 ### Linting
 
@@ -199,13 +199,13 @@ expect(() => returnBook()).toThrow('Unknown book');
 
 ➡ See: [brittle](#brittle)
 
-## M
+## M ⭐
 
 ### Mutation testing
 
 🚧
 
-## P
+## P ⭐
 
 ### Partial mock data
 
@@ -217,7 +217,7 @@ expect(isValidTrade({ quantity: -1 }).toBe(false);
 
 Not a realistic test of the code. The code under test may produce the expected result for the wrong reason. Typed languages can help avoid this (when used well), especially when it comes to maintaining existing tests as the data model grows.
 
-## R
+## R ⭐
 
 ### Redundant assertion
 
