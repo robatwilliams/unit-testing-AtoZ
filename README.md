@@ -229,3 +229,23 @@ expect(book.title).toBe('The Art of Unit Testing');
 ```
 
 Can simply be removed to reduce noise.
+
+### Runner scripts
+
+Shortcut commands for frequently-used test runner invocations.
+
+For a task runner or package manager. Saves some typing, and shares useful commands among the team:
+
+```jsonc
+// package.json
+{
+  "scripts": {
+    "test": "jest",
+    "test:changed": "jest --onlyChanged",
+    "test:coverage": "jest --coverage",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand",
+    "test:since-master": "jest --changedSince origin/master",
+    "test:watch": "jest --watch"
+  }
+}
+```
