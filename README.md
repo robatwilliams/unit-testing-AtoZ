@@ -14,22 +14,7 @@ Much of it is fairly general, but reflects my focus on web frontend applications
 
 The three phases of a test: create/prepare the participants, act on some of them, then assert your expectations.
 
-Readability is improved by having clear separation between them, but some or all of them can be combined in simpler tests:
-
-```javascript
-// Imagine that this test is more complex
-test('add', () => {
-  const calculator = new Calculator();
-
-  const result = calculator.add(1, 2);
-
-  expect(result).toBe(3);
-});
-
-test('isPrime', () => {
-  expect(isPrime(3)).toBe(true);
-});
-```
+Readability is improved by having clear separation (e.g. a blank line) between them, but some or all of them can be combined in very simple tests.
 
 ### Asynchronous
 
