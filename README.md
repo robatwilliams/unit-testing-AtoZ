@@ -65,6 +65,12 @@ Although tools can enforce a specified level of coverage, it's quite a nuanced t
 
 ➡ See: [mutation testing](#mutation-testing)
 
+### Custom assertion
+
+An additional assertion that's added to the test framework's default offering.
+
+Allows writing clearer and less repetitive asserting within tests. May be self-written, or from an extension library such as [jest-extended](https://github.com/jest-community/jest-extended).
+
 ## D ⭐
 
 ### Disable
