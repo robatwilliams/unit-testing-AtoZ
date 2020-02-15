@@ -184,7 +184,35 @@ May be nested, but it's better not to go too deep. Optional; use only when they 
 
 ### Hook
 
-🚧
+Means for a function to be registered with the test runner to be run at a specific point in the test execution lifecycle.
+
+```javascript
+let participant;
+
+beforeEach(() => {
+  // e.g. do some common setup before each test
+  participant = ...;
+});
+
+afterEach(() => {
+  // e.g. cleanup so as not to affect the next test
+});
+```
+
+They are often used to abstract common setup between tests. However, they have many problems and encourage poor practices:
+
+- Encourages the use of shared state, compromising isolation
+- No way of tailoring setup for individual tests, so the "common" setup becomes bloated with test-specifics - a poor abstraction
+- Makes it difficult to modify, move, refactor, and add tests
+- Especially problematic with nested tests in grouping blocks, with hooks at each level
+
+Prefer to use utility functions instead, and use a [lint rule](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-hooks.md) to discourage using hooks.
+
+➡ See: [abstraction](#abstraction)
+
+➡ See: [isolation](#isolation)
+
+➡ See: [utility function](#utility-function)
 
 ## I
 
