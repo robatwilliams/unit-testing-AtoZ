@@ -26,7 +26,7 @@ Readability is improved by having clear separation (e.g. a blank line) between t
 
 A test that is easily broken when it doesn't need to - by a change that doesn't break the code under test.
 
-Often caused by asserting on more than what the test really cares about, such as too-wide a scope, or incidental behaviour. Fixable by refining/reducing the scope of assertions, and/or using a less-strict matcher:
+To avoid, assert on only what the test really cares about. Refine the scope of assertions, ignore incidental behaviour, and/or use less-strict matchers:
 
 ```javascript
 expect(invoice).toEqual({ id: 123, items: 10, amountPayable: 123, etc... });
