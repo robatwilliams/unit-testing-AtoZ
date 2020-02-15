@@ -51,7 +51,7 @@ expect(classes).toContain('btn-disabled');
 
 IDE/editor feature that provides context-aware code completion with documentation.
 
-Usual completion benefits apply when this feature is aware of the test framework. Since frameworks are usually used via the globals they provide, some configuration may be needed to make the completion feature aware of these.
+Usual completion benefits apply when this feature is aware of the test framework. Since frameworks are usually used via the globals they provide, some configuration may be needed to make the completion feature aware of these. The framework can also be made aware of any custom assertions in use.
 
 ### Code review
 
@@ -76,6 +76,8 @@ Although tools can enforce a specified level of coverage, it's quite a nuanced t
 An additional assertion that's added to the test framework's default offering.
 
 Allows writing clearer and less repetitive asserting within tests. May be self-written, or from an extension library such as [jest-extended](https://github.com/jest-community/jest-extended).
+
+➡ See: [code completion](#code-completion)
 
 ## D ⭐
 
