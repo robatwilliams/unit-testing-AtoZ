@@ -47,6 +47,12 @@ expect(classes).toContain('btn-disabled');
 
 ## C ⭐
 
+### Code completion
+
+IDE/editor feature that provides context-aware code completion with documentation.
+
+Usual completion benefits apply when this feature is aware of the test framework. Since frameworks are usually used via the globals they provide, some configuration may be needed to make the completion feature aware of these.
+
 ### Code review
 
 Peer review of code to improve quality and identify problems.
