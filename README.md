@@ -231,7 +231,7 @@ With the approach of a single test file per implementation file, the test file b
 
 A test that isn't too fussy about what it expects - and may continue passing when a change has broken the code under test.
 
-Often caused by inadequate or imprecise assertions. Fixable by increasing their scope and/or making them stricter:
+To avoid, make adequate and precise/strict assertions:
 
 ```javascript
 expect(foo).toBeTruthy();
@@ -240,8 +240,6 @@ expect(foo).toBe(true);
 expect(() => returnBook()).toThrow();
 expect(() => returnBook()).toThrow('Unknown book');
 ```
-
-🧐 ESLint: [jest/no-truthy-falsy](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-truthy-falsy.md), [jest/require-to-throw-message](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/require-to-throw-message.md)
 
 ➡ See: [brittle](#brittle)
 
