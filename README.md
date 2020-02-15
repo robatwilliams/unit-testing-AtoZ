@@ -8,7 +8,13 @@ Much of it is fairly general, but reflects my focus on web frontend applications
 
 ### Abstraction
 
-ð§
+The abstraction away of commonality from similar tests, usually setup code and mock data.
+
+Makes it clear what the differences are between tests. Follows the DRY principle; less repetition, fewer places to change when something changes. Too much abstraction however can make tests difficult to understand, and make it difficult to tailor setup and mock data to suit individual tests.
+
+➡ See: [hook](#hook)
+
+➡ See: [utility function](#utility-function)
 
 ### Arrange, act, assert
 
