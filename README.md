@@ -224,7 +224,15 @@ Validate suspect tests by modifying the code under test to see if it makes the t
 
 ### Isolation
 
-🚧
+The quality of being independent of and unaffected by other tests.
+
+Runtime isolation means tests don't affect each other at runtime - they can be run together, alone, or in any order, and the result will be the same. To achieve that, avoid shared state/variables, and clean up anything whose sharing cannot be avoided.
+
+Subject isolation means a test only tests the code under test - changes to other code won't break it. To achieve that, mock things that the code under test would interact with.
+
+Test code isolation means a test can be changed or moved without dragging up roots that ties it to other tests. To achieve that, avoid excessive abstraction of test setup.
+
+➡ See: [abstraction](#abstraction)
 
 ➡ See: [cleanup](#cleanup)
 
