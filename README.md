@@ -127,8 +127,6 @@ expect(haystack.includes(needle)).toBe(true); // expected true, received false
 expect(haystack).toContain(needle); // expected value <needle>, received array <haystack>
 ```
 
-🧐 ESLint: [jest/prefer-to-contain](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-contain.md), [jest/prefer-to-have-length](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-have-length.md)
-
 ### File
 
 Contains tests. A pattern that works well is to put it alongside the tested file, and give it the same name with a well-known suffix to mark it as a test.
@@ -219,7 +217,7 @@ Some test-specific adaptations to linter configuration is normally necessary; th
 }
 ```
 
-Many test frameworks/libraries have companion plugins for ESLint, for example [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest).
+Many test frameworks/libraries have companion plugins for ESLint, for example [eslint-plugin-jest](https://github.com/jest-community/eslint-plugin-jest). Some of the items covered in this collection can be enforced by such rules.
 
 ### Long file
 
