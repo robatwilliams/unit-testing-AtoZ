@@ -378,9 +378,17 @@ it('', () => {
 
 Most IDEs/editors allow defining [your own](https://code.visualstudio.com/docs/editor/userdefinedsnippets), or installing a [prebuilt pack tailored for your test framework](https://marketplace.visualstudio.com/items?itemName=andys8.jest-snippets).
 
-### Time
+### Time: clock
 
-🚧
+An external, continuously-varying factor that makes every test run different.
+
+For consistent tests all-year in all time zones, inject a fixed time/date into the code under test, or mock the runtime's current time and date.
+
+### Time: timers
+
+Timers set up by code to run some code after a specified duration.
+
+To avoid long-running tests due to waiting in actual-time for that duration to pass, use the test framework's time-mocking capability.
 
 ## U
 
