@@ -272,7 +272,13 @@ expect(() => returnBook()).toThrow('Unknown book');
 
 ### Mutation testing
 
-🚧
+Automatically modifying the code under test to introduce bugs, then running the tests against it to see if they fail.
+
+This tells us about the effectiveness of the tests at catching problems; the use case coverage.
+
+🔗 [Stryker Mutator](https://stryker-mutator.io/)
+
+➡ See: [coverage](#coverage)
 
 ## N ⭐
 
