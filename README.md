@@ -6,6 +6,10 @@ Much of it is fairly general, but reflects my focus on web frontend applications
 
 ## A ⭐
 
+### Abstraction
+
+ð§
+
 ### Arrange, act, assert
 
 The three phases of a test: create/prepare the participants, act on some of them, then assert your expectations.
@@ -26,6 +30,10 @@ test('isPrime', () => {
   expect(isPrime(3)).toBe(true);
 });
 ```
+
+### Asynchronous
+
+🚧
 
 ## B ⭐
 
@@ -187,6 +195,12 @@ Helps keep the test file organised. Allows code folding in IDEs to be used to ga
 
 May be nested, but it's better not to go too deep. Optional; use only when they help. Not necessary to wrap the entire test file in one when using a modern test runner.
 
+## H ⭐
+
+### Hook
+
+🚧
+
 ## I ⭐
 
 ### Ineffective test
@@ -260,6 +274,12 @@ expect(() => returnBook()).toThrow('Unknown book');
 
 🚧
 
+## N ⭐
+
+### Name
+
+🚧
+
 ## P ⭐
 
 ### Partial mock data
@@ -320,6 +340,16 @@ it('', () => {
 ```
 
 It's possible to define [your own](https://code.visualstudio.com/docs/editor/userdefinedsnippets), or install a [prebuilt pack tailored for your test framework](https://marketplace.visualstudio.com/items?itemName=andys8.jest-snippets).
+
+### Time
+
+🚧
+
+## U ⭐
+
+### Utility function
+
+🚧
 
 ## W ⭐
 
