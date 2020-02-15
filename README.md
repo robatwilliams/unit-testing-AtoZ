@@ -309,7 +309,15 @@ This tells us about the effectiveness of the tests at catching problems; the use
 
 ### Name
 
-🚧
+Describes what is being tested.
+
+Names should be clear, concise, and unambiguous. Good naming encourages other good testing practices. Helps spot missing tests. Adds documentation and provides context (possibly replacing a code comment). Aids readability and understanding of test runner output.
+
+There are numerous styles of test naming, and test frameworks offer a few test definition functions such as `test()` and `it()` to support these. The former is flexible, while the latter is for names of the form "it( _expectation_ when _scenario/input_". Use a consistent approach (a [lint rule](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/consistent-test-it.md) can enforce this), and write test names that follow that approach.
+
+When the _why_ of the tested behaviour isn't obvious, consider extending the test name to include it: it - when - because. Try to avoid ambiguous words/phrases such as "correctly" or "as it should", or unnecessary words such as "should".
+
+➡ See: [grouping block](#grouping-block)
 
 ## O
 
