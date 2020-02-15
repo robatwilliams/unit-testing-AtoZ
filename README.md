@@ -1,4 +1,4 @@
-# unit-testing-AtoZ
+# Unit testing A-Z
 
 > A collection of short and practical tips for better unit testing
 
