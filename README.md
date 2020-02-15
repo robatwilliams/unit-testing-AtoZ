@@ -4,7 +4,7 @@
 
 Much of it is fairly general, but reflects my focus on web frontend applications.
 
-## A ⭐
+## A
 
 ### Abstraction
 
@@ -35,7 +35,7 @@ test('isPrime', () => {
 
 🚧
 
-## B ⭐
+## B
 
 ### Brittle
 
@@ -53,7 +53,7 @@ expect(classes).toContain('btn-disabled');
 
 ➡ See: [loose](#loose)
 
-## C ⭐
+## C
 
 ### Cleanup
 
@@ -114,7 +114,7 @@ Allows clearer and less repetitive asserting within tests. May be self-written, 
 
 ➡ See: [code completion](#code-completion)
 
-## D ⭐
+## D
 
 ### Disable
 
@@ -130,7 +130,7 @@ A lint rule can be used to avoid forgetting to remove a skip marker. When a test
 
 ➡ See: [focus](#focus)
 
-## F ⭐
+## F
 
 ### Failure message
 
@@ -178,7 +178,7 @@ Useful for reducing execution time and test runner output clutter when working o
 
 ➡ See: [disable](#disable)
 
-## G ⭐
+## G
 
 ### Grouping block
 
@@ -195,13 +195,13 @@ Helps keep the test file organised. Allows code folding in IDEs to be used to ga
 
 May be nested, but it's better not to go too deep. Optional; use only when they help. Not necessary to wrap the entire test file in one when using a modern test runner.
 
-## H ⭐
+## H
 
 ### Hook
 
 🚧
 
-## I ⭐
+## I
 
 ### Ineffective test
 
@@ -215,7 +215,7 @@ Validate suspect tests by modifying the code under test to see if it makes the t
 
 ➡ See: [cleanup](#cleanup)
 
-## L ⭐
+## L
 
 ### Linting
 
@@ -268,7 +268,7 @@ expect(() => returnBook()).toThrow('Unknown book');
 
 ➡ See: [brittle](#brittle)
 
-## M ⭐
+## M
 
 ### Mutation testing
 
@@ -280,13 +280,13 @@ This tells us about the effectiveness of the tests at catching problems; the use
 
 ➡ See: [coverage](#coverage)
 
-## N ⭐
+## N
 
 ### Name
 
 🚧
 
-## P ⭐
+## P
 
 ### Partial mock data
 
@@ -298,7 +298,7 @@ expect(isValidTrade({ quantity: -1 }).toBe(false);
 
 Not a realistic test of the code. The code under test may produce the expected result for the wrong reason. Typed languages can help avoid this (when used well), especially when it comes to maintaining existing tests as the data model grows.
 
-## R ⭐
+## R
 
 ### Redundant assertion
 
@@ -331,7 +331,7 @@ For a task runner or package manager. Saves some typing, and shares useful comma
 }
 ```
 
-## T ⭐
+## T
 
 ### Template (snippet)
 
@@ -351,13 +351,13 @@ It's possible to define [your own](https://code.visualstudio.com/docs/editor/use
 
 🚧
 
-## U ⭐
+## U
 
 ### Utility function
 
 🚧
 
-## W ⭐
+## W
 
 ### Watch mode
 
