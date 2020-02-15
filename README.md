@@ -123,8 +123,8 @@ There are many ways of asserting the same expectations, but using the most suita
 expect(array.length).toBe(3); // expected 3, received 1
 expect(array).toHaveLength(3); // expected length 3, received length 1, array: ['apple']
 
-expect(haystack.includes(needle)).toBe(true);
-expect(haystack).toContain(needle);
+expect(haystack.includes(needle)).toBe(true); // expected true, received false
+expect(haystack).toContain(needle); // expected value <needle>, received array <haystack>
 ```
 
 🧐 ESLint: [jest/prefer-to-contain](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-contain.md), [jest/prefer-to-have-length](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/prefer-to-have-length.md)
