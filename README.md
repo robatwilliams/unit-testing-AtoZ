@@ -1,6 +1,6 @@
 # unit-testing-AtoZ
 
-> A collection of short and practical tips for better unit tests
+> A collection of short and practical tips for better unit testing
 
 Much of it is fairly general, but reflects my focus on web frontend applications.
 
