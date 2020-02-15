@@ -24,7 +24,11 @@ Readability is improved by having clear separation (e.g. a blank line) between t
 
 ### Asynchronous
 
-🚧
+Asynchronous code is trickier to test correctly, so care is needed.
+
+Make sure that assertions are actually run, and that they run at the right moment. Use the test framework's utility functions to flush pending async tasks, and to assert that assertions were run.
+
+➡ See: [cleanup](#cleanup)
 
 ## B
 
