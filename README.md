@@ -257,3 +257,9 @@ For a task runner or package manager. Saves some typing, and shares useful comma
   }
 }
 ```
+
+## W ⭐
+
+### Watch mode
+
+Test runner feature that automatically re-runs tests when the test or implementation files are changed.
