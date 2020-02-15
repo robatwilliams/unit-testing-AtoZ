@@ -404,7 +404,7 @@ To avoid long-running tests due to waiting in actual-time for that duration to p
 
 A function which abstracts away some common work away from individual tests.
 
-Typical uses are setup logic, or to return mock data. The function can be parameterised to allow tailoring the setup/data for individual tests, this also aids test compreshension by making clear the differences between tests. Multiple participants can be returned on an object for convenient destructuring.
+Typical uses are setup logic, or to return mock data. The function can be parameterised to allow tailoring the setup/data for individual tests, this also aids test comprehension by making clear the differences between tests. Multiple participants can be returned on an object for convenient destructuring.
 
 The preferred alternative to hooks.
 
