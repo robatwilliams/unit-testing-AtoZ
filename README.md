@@ -121,14 +121,10 @@ Allows clearer and less repetitive asserting within tests. May be self-written, 
 Marking a test (or a group of tests) to not be run:
 
 ```javascript
-it.skip('disables the button when the form is invalid', () => {});
+test.skip('', () => {});
 ```
 
-A lint rule can be used to avoid forgetting to remove a skip marker. When a test needs to be checked in despite being skipped, a lint-ignore comment can be used - best preceded with an explanatory comment.
-
-🧐 ESLint: [jest/no-disabled-tests](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-disabled-tests.md)
-
-➡ See: [focus](#focus)
+A [lint rule](<(https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-disabled-tests.md)>) can be used to avoid forgetting to remove it.
 
 ## F
 
@@ -169,14 +165,10 @@ There are many approaches, but top-level separation into `src` and `test` folder
 Marking a test (or a group of tests) as the only one to be run:
 
 ```javascript
-it.only('disables the button when the form is invalid', () => {});
+test.only('', () => {});
 ```
 
-Useful for reducing execution time and test runner output clutter when working on a specific area of functionality. Also for debugging a single test. A lint rule can be used to avoid forgetting to remove a focus marker.
-
-🧐 ESLint: [jest/no-focused-tests](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-focused-tests.md)
-
-➡ See: [disable](#disable)
+Useful for reducing execution time and test runner output clutter when working on a specific area of functionality. Also for debugging a single test. A [lint rule](<(https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-focused-tests.md)>) can be used to avoid forgetting to remove it.
 
 ## G
 
