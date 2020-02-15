@@ -44,9 +44,9 @@ expect(classes).toContain('btn-disabled');
 
 Restoring the test environment and participants to the state they were in before the test began.
 
-This helps ensure that subsequently run tests aren't affected by anything the current test did. Practically this means restoring any shared/static participants (if they must be used at all), restoring implementations that were mocked, and clearing out pending asynchronous work.
+This ensures that subsequently run tests aren't affected by anything the current test did. Practically this means restoring any shared/static participants (if they must be used at all), restoring implementations that were mocked, and clearing out pending asynchronous work.
 
-Test frameworks can be configured to do some of the cleanup automatically after each test:
+Test frameworks can be configured to do some of this automatically after each test:
 
 ```jsonc
 // jest.config.json
