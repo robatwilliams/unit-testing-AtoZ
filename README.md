@@ -366,7 +366,41 @@ Most IDEs/editors allow defining [your own](https://code.visualstudio.com/docs/e
 
 ### Utility function
 
-🚧
+A function which abstracts away some common work away from individual tests.
+
+Typical uses are setup logic, or to return mock data. The function can be parameterised to allow tailoring the setup/data for individual tests, this also aids test compreshension by making clear the differences between tests. Multiple participants can be returned on an object for convenient destructuring.
+
+The preferred alternative to hooks.
+
+```javascript
+test('order with zero quantity is not valid', () => {
+  const { validator, account } = setup();
+  const order = createOrder({ quantity: 0 });
+
+  // ...
+});
+
+function setup() {
+  // ...
+
+  return {
+    validator,
+    account: defaultAccount,
+  };
+}
+
+function createOrder({ quantity = 100 } = {}) {
+  return {
+    symbol: 'EURGBP',
+    quantity,
+    // ...
+  };
+}
+```
+
+➡ See: [abstraction](#abstraction)
+
+➡ See: [hook](#hook)
 
 ## W
 
