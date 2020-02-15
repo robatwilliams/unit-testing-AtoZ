@@ -305,6 +305,22 @@ For a task runner or package manager. Saves some typing, and shares useful comma
 }
 ```
 
+## T ⭐
+
+### Template (snippet)
+
+Frequently-typed piece of code that can be quickly by an editor/IDE.
+
+Saves on repetitive typing and maintains your flow. The following test skeleton can be inserted in ~3 keystrokes, whereas typing it would require 10-20:
+
+<!-- prettier-ignore -->
+```javascript
+it('', () => {
+});
+```
+
+It's possible to define [your own](https://code.visualstudio.com/docs/editor/userdefinedsnippets), or install a [prebuilt pack tailored for your test framework](https://marketplace.visualstudio.com/items?itemName=andys8.jest-snippets).
+
 ## W ⭐
 
 ### Watch mode
