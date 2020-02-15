@@ -51,7 +51,7 @@ expect(classes).toContain('btn-disabled');
 
 IDE/editor feature that provides context-aware code completion with documentation.
 
-Usual completion benefits apply when this feature is aware of the test framework. Since frameworks are usually used via the globals they provide, some configuration may be needed to make the completion feature aware of these. The framework can also be made aware of any custom assertions in use.
+Usual completion benefits apply when this feature is aware of the test framework. Since frameworks are usually used via the globals they provide, some configuration may be needed to make the completion feature aware of these. The framework can also be made aware of any custom assertions in use, which makes them more easily discoverable for developers.
 
 ### Code review
 
