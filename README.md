@@ -47,6 +47,33 @@ expect(classes).toContain('btn-disabled');
 
 ## C ⭐
 
+### Cleanup
+
+Restoring the test environment and participants to the state they were in before the test began.
+
+This helps ensure that subsequently run tests aren't affected by anything the current test did. Practically this means restoring any shared participants (if they must be used at all), restoring implementations that were mocked, and clearing out pending asynchronous work.
+
+Test frameworks can be configured to do some of the cleanup automatically after each test:
+
+```jsonc
+// jest.config.json
+{
+  "restoreMocks": true,
+  "setupFilesAfterEnv": ["./jest.setup.js"]
+}
+```
+
+```javascript
+// jest.setup.js
+afterEach(() => {
+  jest.clearAllTimers();
+
+  // It's not so easy for Promises: https://github.com/facebook/jest/issues/2157
+});
+```
+
+➡ See: [isolation](#isolation)
+
 ### Code completion
 
 IDE/editor feature that provides context-aware code completion with documentation.
@@ -167,6 +194,12 @@ May be nested, but it's better not to go too deep. Optional; use only when they 
 A test that doesn't test what its name says it tests - continues to pass when the code is broken.
 
 Validate suspect tests by modifying the code under test to see if it makes the test fail.
+
+### Isolation
+
+🚧
+
+➡ See: [cleanup](#cleanup)
 
 ## L ⭐
 
