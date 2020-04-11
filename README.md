@@ -398,6 +398,12 @@ Timers set up by code to run some code after a specified duration.
 
 To avoid long-running tests due to waiting in actual-time for that duration to pass, use the test framework's time-mocking capability.
 
+### Type safety
+
+Static type checking of the code, providing lower-effort problem detection and faster feedback than unit tests.
+
+When the code that uses the code under test is type-checked against the latter, unit tests for problems caught by the type system are unnecessary.
+
 ## U
 
 ### Utility function
