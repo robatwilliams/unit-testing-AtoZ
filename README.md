@@ -319,6 +319,26 @@ When the _why_ of the tested behaviour isn't obvious, consider extending the tes
 
 ➡ See: [grouping block](#grouping-block)
 
+### Negative testing
+
+Testing that the code doesn't do something, or doesn't do anything other than what it should.
+
+The former is for known unwanted behaviours, and so can be specifically asserted:
+
+```javascript
+expect(showErrors).not.toHaveBeenCalled();
+expect(submit).toHaveBeenCalledTimes(1);
+expect(order).not.toHaveProperty('expiry');
+```
+
+The latter is for unknown unwanted behaviours, and so requires a strict assertion on the complete area of interest:
+
+```javascript
+expect(order).toEqual({ price: 1, quantity: 2 });
+```
+
+➡ See: [brittle](#brittle)
+
 ## O
 
 ## P
